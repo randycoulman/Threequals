@@ -1,6 +1,6 @@
 # Threequals
 
-Add Ruby-like #=== to Visualworks Smalltalk.
+Add Ruby-like `#===` to Visualworks Smalltalk.
 
 Threequals is licensed under the MIT license.  See the copyright tab
 in the RB, the 'notice' property of this package, or the License.txt
@@ -19,9 +19,9 @@ GitHub.
 # Introduction
 
 Threequals adds the Ruby-like `#===` method to Visualworks Smalltalk.
-The `#===` method, or "case equals" as it is sometimes known is used
+The `#===` method, or "case equals" as it is known, is used
 in Ruby case statements, and allows for very flexible comparisons
-between objects.
+between objects in other situations as well.
 
 In this implementation, two objects are `===` if they are `=`.  In
 addition:
@@ -50,6 +50,8 @@ BlockClosure === [:x | x isBehavior not]
 [:x | x isBehavior not] === BlockClosure
 ```
 
+Should this evaluate to `true` or `false`?
+
 You can add `#===` to your own classes.  Keep in mind the following
 guidelines:
 
@@ -63,7 +65,7 @@ comparison.
 
 This package is made up entirely of extensions on base and other
 classes.  `Object>>===` is the base implementation and simply defaults
-to #=.  Other implementations always send to `super`, but also do
+to `#=`.  Other implementations always send to `super`, but also do
 something extra, being careful not to raise exceptions.
 
 # Contributing
