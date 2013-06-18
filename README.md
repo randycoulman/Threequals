@@ -55,11 +55,9 @@ Should this evaluate to `true` or `false`?
 You can add `#===` to your own classes.  Keep in mind the following
 guidelines:
 
-1. Make sure you send to `super` to maintain the default `#=`
-comparison.
+1. Send to `super` to maintain the default `#=` comparison.
 
-2. Don't allow an exception to be raised when performing your
-   domain-specific comparison.
+2. Trap any errors and simply return `false`.
 
 # Understanding the Code
 
