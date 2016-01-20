@@ -1,5 +1,7 @@
 # Threequals
 
+![Maintenance Status](https://img.shields.io/badge/maintenance-active-green.svg)
+
 Add Ruby-like `#===` to Visualworks Smalltalk.
 
 Threequals is licensed under the MIT license.  See the copyright tab
